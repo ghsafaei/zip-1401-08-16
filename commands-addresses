@@ -1,0 +1,41 @@
+https://ftp.ast.cam.ac.uk/pub/sverre/
+
+
+
+https://github.com/ahwkuepper?tab=repositories
+
+
+https://github.com/ghsafaei/Nbody6-version-ApJ
+https://github.com/ghsafaei/exercise-fall-2022
+
+
+
+make clean
+make mcluster
+./mcluster  -C2  -o test2        > tdetails.log 2>ttest.err&
+
+
+
+
+
+1.50000000e+10 5.00000000e+10 4.000000 0.500000 220.000000 8.500000 0.0000000 0.000000 0.000000 0.000000 0.0000 0.00000 1.000000
+
+
+
+
+
+make clean
+make
+echo \"test2\"  nohup | ../nbody6-master/Ncode/nbody6 > test2.log 2>test.err&
+tail -f test2.log
+
+
+
+gcc  naus.c  -lm -o naus
+
+
+nohup | ../naus-master/naus test2
+
+nohup | ../naus-master/naus test2   >   naus2.log 2>test3.err&
+
+time,M,N,n[0],n[1],n[2],n[3],nbin[0],fbin,sigma,sigmauncor,E[0],E[1],E[2],Euncor[0],Euncor[1],Euncor[2],kT,LR[0],LR[1],LR[2],LR[3],LR[4],LR[5],Rc,rtide,omega,LLR[4],Ltot, mv,KR[0],KR[1],KR[2],KR[3],KR[4],KR[5],KR[6],KR[7],KR[8],KR[9],racc
