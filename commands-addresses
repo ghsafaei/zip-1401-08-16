@@ -4,7 +4,7 @@ https://ftp.ast.cam.ac.uk/pub/sverre/
 
 https://github.com/ahwkuepper?tab=repositories
 
-
+https://github.com/ghsafaei/zip-1401-08-16
 https://github.com/ghsafaei/Nbody6-version-ApJ
 https://github.com/ghsafaei/exercise-fall-2022
 
@@ -39,3 +39,98 @@ nohup | ../naus-master/naus test2
 nohup | ../naus-master/naus test2   >   naus2.log 2>test3.err&
 
 time,M,N,n[0],n[1],n[2],n[3],nbin[0],fbin,sigma,sigmauncor,E[0],E[1],E[2],Euncor[0],Euncor[1],Euncor[2],kT,LR[0],LR[1],LR[2],LR[3],LR[4],LR[5],Rc,rtide,omega,LLR[4],Ltot, mv,KR[0],KR[1],KR[2],KR[3],KR[4],KR[5],KR[6],KR[7],KR[8],KR[9],racc
+
+
+
+
+
+
+
+
+5 5000000.0 0
+0.0 0.0 0.0 0.0 0.0 0.0 0 0
+0.03 0.03 0.0 0.0 0.0 0 90 0.0
+
+
+5 5000000.0 0
+0.0 0.0 0.0 0.0 0.0 0.0 17 3
+0.0 0.0 0.0 0.0 0.0 0 90 0.0
+
+
+5 5000000.0 0
+0.0 0.0 0.0 0.0 0.0 0.0 16 3
+0.0 0.0 0.0 0.0 0.0 0 90 0.0
+
+
+5 5000000.0 0
+0.0 0.0 0.0 0.0 0.0 0.0 0 0
+0.01 0.01 0.0 1.0E-7 1.0E-6 0 70 0.0
+
+5 5000000.0 0
+0.0 0.0 0.0 0.0 0.0 0.0 0 0
+0.01 0.01 0.0 0.0 0.0 0 90 0.0
+
+
+5 5000000.0 0
+0.0 0.0 0.0 0.0 0.0 0.0 0 0
+0.0 0.0 0.0 0.0 0.0 0 90 0.0
+
+
+5 5000000.0 0
+0.0 0.0 0.0 0.0 0.0 0.0 17 2
+0.0 0.0 0.0 0.0 0.0 0 0 0.0
+
+5 5000000.0 0
+0.0 0.0 0.0 0.0 0.0 0.0 16 2
+0.01 0.01 0.0 1.0E-7 1.0E-6 0 70 0.0
+
+
+5 5000000.0 0
+0.0 0.0 0.0 0.0 0.0 0.0 16 2
+0.03 0.03 0.0 0.0 0.0 0 70 0.0
+
+
+5 5000000.0 0
+0.0 0.0 0.0 0.0 0.0 0.0 17 2
+0.03 0.03 0.0 0.0 0.0 0.0 70 0.0
+
+
+
+=3: DTADJ, DELTAT, TADJ, TNEXT, TCRIT, QE, J, KZ(J)
+=4: ETAI, ETAR, ETAU, DTMIN, RMIN, NCRIT, NNBOPT,SMAX
+
+3 1000000.0 1.E6 40 40 640
+2.0 2.0 0.0 0.0 0.0 0.0 16 0
+
+
+5 5000000.0 0
+0.015 0.0 0.0 0.0 0.0 1.0E-2 0 0
+0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+
+
+
+5 5000000.0 0
+0.0 0.0 0.0 0.0 0.0 1.0E-2 17 2
+0.03 0.03 0.0 0.0 0.0 0.0 70 0.0
+
+
+
+5 5000000.0 0
+0.0 0.0 0.0 0.0 0.0 0.0 17 0
+0.01 0.01 0.0 0.0 0.0 0.0 63 0.0
+
+
+
+
+
+
+
+
+
+
+
+make clean
+make
+echo \"test2\"  nohup | ../nbody6-master/Ncode/nbody6 > test2.log 2>test.err&
+make READ-NBODY-RT
+../read-nbody-master/READ-NBODY-RT OUT3 my_simulation 0 0
