@@ -121,7 +121,9 @@ time,M,N,n[0],n[1],n[2],n[3],nbin[0],fbin,sigma,sigmauncor,E[0],E[1],E[2],Euncor
 
 
 
-
+make clean
+make mcluster
+./mcluster  -C0  -o test2        > tdetails.log 2>ttest.err&
 
 
 1.500000e+10 5.000000e+10 4.000000 0.500000 220.000000 8.500000 0.000000e+00 1.000000 1.000000
@@ -131,6 +133,8 @@ M1allen     ,M2allen      ,a2allen,b2allen,VCIRC,      RCIRC,       GMB,      AR
 
 make clean
 make
-echo \"test2\"  nohup | ../nbody6-master/Ncode/nbody6 > test2.log 2>test.err&
+nohup   ../../../NBODY7b/Ncode/nbody6  <test.input >test.log 2>test.err &
+nohup   ../../../../NBODY7b/Ncode/nbody6  <test.input >test.log 2>test.err &
+
 make READ-NBODY-RT
 ../read-nbody-master/READ-NBODY-RT OUT3 my_simulation 0 0
