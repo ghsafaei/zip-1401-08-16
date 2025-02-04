@@ -140,3 +140,20 @@ tail -f test.log
 
 make READ-NBODY-RT
 ../read-nbody-master/READ-NBODY-RT OUT3 my_simulation 0 0
+
+
+
+
+
+
+kz(6)
+kz(7)
+kz(8)
+kz(9)
+kz(17)
+kz(25)
+kz(30)
+kz(31)
+kz(37)
+kz(38)
+
