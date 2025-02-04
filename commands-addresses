@@ -135,6 +135,8 @@ make clean
 make
 nohup   ../../../NBODY7b/Ncode/nbody6  <test.input >test.log 2>test.err &
 nohup   ../../../../NBODY7b/Ncode/nbody6  <test.input >test.log 2>test.err &
+nohup   ../nbody6/Ncode/nbody6  <test.input >test.log 2>test.err &
+tail -f test.log
 
 make READ-NBODY-RT
 ../read-nbody-master/READ-NBODY-RT OUT3 my_simulation 0 0
